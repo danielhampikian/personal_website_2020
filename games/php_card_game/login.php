@@ -94,7 +94,7 @@ $user_email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         }    
         
         } catch(PDOException $e) {
-                // echo "Error: " . $e->getMessage();
+            echo "Error: " . $e->getMessage();
             }
             $conn = null;
     
